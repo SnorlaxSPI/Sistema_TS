@@ -2,13 +2,13 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5436,
-  "username": "pg",
-  "password": "pg",
+  "username": "postgres",
+  "password": "root",
   "database": "postgres",  
   "migrations": [
      "src/database/migrations/**.ts"
   ],
-  "entities": ["./src/models/**.ts"],
+  "entities": ["./src/entities/**.ts"],
   "cli": {
      "migrationsDir": "src/database/migrations"
   }
