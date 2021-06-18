@@ -6,7 +6,7 @@
   "author": "Alessandro Lins <aflinsjr@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev:server": "tsnd --respawn --ignore-watch node_modules --transpile-only src/server.ts ",
+    "dev:server": "tsnd --respawn --files --ignore-watch node_modules --transpile-only src/server.ts ",
     "typeorm": "tsnd node_modules/typeorm/cli.js"
   },
   "dependencies": {

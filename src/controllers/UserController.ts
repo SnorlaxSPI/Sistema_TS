@@ -4,6 +4,11 @@ import { getRepository } from 'typeorm';
 import { User } from '../models/User'
 
 class UserController {
+
+  index(request:Request, response:Response) {
+    return response.send({ userId: request.userId });
+  }
+
   async store (request:Request, response:Response) {
     const repository = getRepository(User);
     const { email, password } = request.body;
@@ -21,4 +26,4 @@ class UserController {
   }
 }
 
-export default new UserController();
+export { UserController }
